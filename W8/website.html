@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Basis Theory — Mockup (Tailwind CDN)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small custom styles to better match the mockup */
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); }
+    .accent { background: linear-gradient(90deg,#7c3aed,#06b6d4); }
+  </style>
+</head>
+<body class="bg-white text-slate-100 antialiased">
+  <!-- NAV -->
+  <header class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-14">
+      <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center font-bold text-black">LOGO</div>
+      <nav class="hidden md:flex gap-10 text-md text-slate-600">
+        <a href="#" class="hover:text-white">Use Cases</a>
+        <a href="#" class="hover:text-white">Solutions</a>
+        <a href="#" class="hover:text-white">Why Basic Theory</a>
+        <a href="#" class="hover:text-white">Pricing</a>
+        <a href="#" class="hover:text-white">Blog</a>
+        <a href="#" class="hover:text-white">Docs</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#" class="px-4 py-2 text-sm text-black border border-slate-300 rounded-lg">Login</a>
+      <a href="#" class="px-4 py-2 rounded-lg bg-black text-white font-medium text-sm">Get a demo</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="max-w-7xl mx-auto px-6">
+    <section class="grid md:grid-cols-2 gap-10 items-center py-12">
+      <div>
+        <div class="inline-flex items-center gap-3 mb-6">
+          <span class="px-3 py-1 rounded-full text-xs font-medium bg-white/6">Built for modern payments</span>
+          <span class="text-sm text-slate-400">Trusted by products handling sensitive data</span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-white">Built to keep customers transacting</h1>
+        <p class="mt-6 text-lg text-slate-300 max-w-xl">An infrastructure platform that lets you collect, store, and use payment data without handling raw sensitive information — faster integration, simpler compliance.</p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#" class="px-5 py-3 rounded-lg font-semibold bg-white text-slate-900 shadow-sm">Get started free</a>
+          <a href="#" class="px-5 py-3 rounded-lg font-semibold glass border border-white/6">Talk to sales</a>
+        </div>
+
+        <!-- Trust logos -->
+        <div class="mt-10 flex flex-wrap items-center gap-6 text-slate-400 text-sm">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded bg-white/5 flex items-center justify-center">A</div>
+            <div>Acme</div>
+          </div>
+          <div class="flex items-center gap-3 opacity-90">
+            <div class="w-10 h-10 rounded bg-white/5 flex items-center justify-center">B</div>
+            <div>Stellar</div>
+          </div>
+          <div class="flex items-center gap-3 opacity-80">
+            <div class="w-10 h-10 rounded bg-white/5 flex items-center justify-center">C</div>
+            <div>Orbit</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: mock device / illustration -->
+      <div class="relative">
+        <div class="w-full h-80 md:h-96 rounded-3xl overflow-hidden relative shadow-2xl">
+          <div class="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900"></div>
+          <!-- simulated UI card -->
+          <div class="absolute left-8 top-10 right-8 bottom-10 rounded-2xl p-6 glass border border-white/6">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="h-3 w-16 bg-white/10 rounded mb-2"></div>
+                <div class="h-8 w-36 bg-white/6 rounded"></div>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-300">
+                <div class="px-3 py-1 rounded bg-white/5">Live</div>
+                <div class="h-8 w-8 rounded bg-white/6"></div>
+              </div>
+            </div>
+
+            <div class="mt-6 grid grid-cols-3 gap-4">
+              <div class="p-3 rounded bg-white/4">
+                <div class="h-4 w-10 bg-white/10 rounded mb-2"></div>
+                <div class="h-6 w-full bg-white/8 rounded"></div>
+              </div>
+              <div class="p-3 rounded bg-white/4">
+                <div class="h-4 w-10 bg-white/10 rounded mb-2"></div>
+                <div class="h-6 w-full bg-white/8 rounded"></div>
+              </div>
+              <div class="p-3 rounded bg-white/4">
+                <div class="h-4 w-10 bg-white/10 rounded mb-2"></div>
+                <div class="h-6 w-full bg-white/8 rounded"></div>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <div class="h-2 w-48 bg-white/10 rounded mb-3"></div>
+              <div class="h-3 w-24 bg-white/8 rounded"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- small badges -->
+        <div class="absolute -bottom-6 left-8 flex gap-3">
+          <div class="px-3 py-2 rounded-xl bg-white/6">PCI-ready</div>
+          <div class="px-3 py-2 rounded-xl bg-white/6">SaaS-ready</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-12 border-t border-white/6">
+      <h3 class="text-xl font-semibold text-white">How it works</h3>
+      <p class="mt-2 text-slate-400 max-w-2xl">Connect, tokenize, and use payment data without touching raw card details. Simple APIs, strong controls, and developer tools to move fast.</p>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-gradient-to-b from-white/3 to-white/2 border border-white/6">
+          <h4 class="font-semibold text-white">Tokenization</h4>
+          <p class="mt-3 text-slate-300 text-sm">Replace sensitive payment data with tokens you can safely store and process.</p>
+          <a href="#" class="mt-4 inline-block text-sm text-sky-300">Learn more →</a>
+        </div>
+        <div class="p-6 rounded-2xl bg-gradient-to-b from-white/3 to-white/2 border border-white/6">
+          <h4 class="font-semibold text-white">Data Controls</h4>
+          <p class="mt-3 text-slate-300 text-sm">Fine-grained access controls and audit logs give teams confidence.</p>
+          <a href="#" class="mt-4 inline-block text-sm text-sky-300">Learn more →</a>
+        </div>
+        <div class="p-6 rounded-2xl bg-gradient-to-b from-white/3 to-white/2 border border-white/6">
+          <h4 class="font-semibold text-white">Developer tools</h4>
+          <p class="mt-3 text-slate-300 text-sm">SDKs, API docs, and quickstarts to ship integrations in hours.</p>
+          <a href="#" class="mt-4 inline-block text-sm text-sky-300">Learn more →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING / CTA BANNER -->
+    <section class="mt-12 py-12 px-6 rounded-2xl accent text-slate-900 shadow-2xl">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-2xl font-bold">Get started with Basis Theory today</h3>
+        <p class="mt-3">Integrate in minutes and remove the burden of handling raw payment data.</p>
+        <div class="mt-6 flex justify-center gap-4">
+          <a href="#" class="px-5 py-3 rounded-lg bg-white font-semibold">Try it free</a>
+          <a href="#" class="px-5 py-3 rounded-lg bg-white/30 glass">Contact sales</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-16 border-t border-white/6 pt-10 pb-20 text-slate-400">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-6 px-6">
+        <div>
+          <div class="font-bold text-white mb-3">Basis Theory</div>
+          <p class="text-sm">Payment infrastructure for modern engineering teams.</p>
+        </div>
+        <div>
+          <h5 class="font-semibold text-white mb-2">Product</h5>
+          <ul class="space-y-2 text-sm">
+            <li>Tokenization</li>
+            <li>Integrations</li>
+            <li>Security</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold text-white mb-2">Developers</h5>
+          <ul class="space-y-2 text-sm">
+            <li>Docs</li>
+            <li>SDKs</li>
+            <li>API reference</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold text-white mb-2">Company</h5>
+          <ul class="space-y-2 text-sm">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 mt-8 flex justify-between text-sm">
+        <div>© <span id="year"></span> Basis Theory</div>
+        <div>Privacy • Terms</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
